@@ -1,0 +1,39 @@
+window 10기준
+
+git config --global user.name "cys41"
+git config --global user.email "younseo42@gmail.com"
+원하는 곳에 폴더하나 만들고
+cd 경로 로 폴더 들어가주기
+(윈도우 path 복사했을 때 \ 쓰지말고 / 쓰기)
+git init
+git add .
+git status
+git sample.txt
+git remote -v 현재 연결어따되잇냐
+git push -u origin main 쳤더니 그냥 커서만 깜빡였
+그래서 해결방법
+cd C:\Users\cys41\Myproject //cmd에 만든 폴더 경로로 들어가주고
+
+git push -u origin main  //이걸 치면
+
+//이게 나옴
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+  2. Personal access token
+option (enter for default): 1 입력후 엔터
+
+info: please complete authentication in your browser... //이게나오며 웹하나가뜬다
+나는 거기에 Auther...머시기 초록색버튼 누르고 비밀번호 치라는 창나오길래
+비번 치니까 웹에는 Auternication Succeeded 뜨고
+cmd에는
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 492 bytes | 82.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/younseochoi/my_app.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+이거뜸 이거뜨고 난후에 git bash에서도 push 잘됨
